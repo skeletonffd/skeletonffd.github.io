@@ -48,51 +48,32 @@ h1 {
     text-align: center;
 }
 
-.example1 {
-    height: 50px;
-    overflow: hidden;
-    position: relative;
-    color: white;
-}
-.example1 p {
-    position: absolute;
-    width: 200%;
-    height: 200%;
+body {
     margin: 0;
-    line-height: 30px;
-    text-align: center;
-    /* Starting position */
-    -moz-transform:translateX(100%);
-    -webkit-transform:translateX(100%);
-    transform:translateX(100%);
-    /* Apply animation to this element */
-    -moz-animation: example1 10s linear infinite;
-    -webkit-animation: example1 10s linear infinite;
-    animation: example1 10s linear infinite;
+    padding: 0;
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
 }
-/* Move it (define the animation) */
-@-moz-keyframes example1 {
-    0%   { -moz-transform: translateX(100%); }
-    100% { -moz-transform: translateX(-100%); }
+
+.marquee {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 200px;
+    overflow-x: hidden;
 }
-@-webkit-keyframes example1 {
-    0%   { -webkit-transform: translateX(100%); }
-    100% { -webkit-transform: translateX(-100%); }
+
+.track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 32s linear infinite;
 }
-@keyframes example1 {
-    0%   {
-        -moz-transform: translateX(100%); /* Firefox bug fix */
-        -webkit-transform: translateX(100%); /* Firefox bug fix */
-        transform: translateX(100%);
-    }
-    100% {
-        -moz-transform: translateX(-100%); /* Firefox bug fix */
-        -webkit-transform: translateX(-100%); /* Firefox bug fix */
-        transform: translateX(-100%);
-    }
+
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
 }
-.example1 p:hover {
-    -moz-animation-play-state: paused;
-    -webkit-animation-play-state: paused;
-    animation-play-state: paused;
-}
+
+
