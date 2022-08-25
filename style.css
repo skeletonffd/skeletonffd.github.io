@@ -1,4 +1,14 @@
-.paragraph {
-    font-size: 50px;
-    line-height: 62px;
+p1 {
+    color: red;
+
 }
+marquee {
+    color: white;
+}
+p1 {
+    font-family: "Times New Roman", Times, serif;
+}
+p1 {
+    text-align: center;
+}
+body {background-image:url('https://mblogthumb-phinf.pstatic.net/20150911_199/ggariana_1441972118418p5Rzs_JPEG/zyzz-workout.jpg?type=w2');}
