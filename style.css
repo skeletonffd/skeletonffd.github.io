@@ -56,10 +56,10 @@ h1 {
 }
 .example1 p {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 200%;
+    height: 200%;
     margin: 0;
-    line-height: 50px;
+    line-height: 30px;
     text-align: center;
     /* Starting position */
     -moz-transform:translateX(100%);
