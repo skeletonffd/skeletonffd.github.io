@@ -12,4 +12,38 @@ p1 {
     text-align: center;
 }
 body {background-image:url('https://mblogthumb-phinf.pstatic.net/20150911_199/ggariana_1441972118418p5Rzs_JPEG/zyzz-workout.jpg?type=w2');}
+h1 {
+     color: white; text-align:center;
+}
+/* 杰克斑马 hover overlay*/
+.container {
+    position: relative;
+    width: 50%;
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000;
+    overflow: hidden;
+    width: 28%;
+    height: 0;
+    transition: .5s ease;
+}
 
+.container:hover .overlay {
+    height: 100%;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
