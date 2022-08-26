@@ -11,9 +11,13 @@ p1 {
 p1 {
     text-align: center;
 }
-body {background-image:url('微信图片_20220827034014.jpg');}
+body {background-image:url('微信图片_20220827034014.jpg');
+width:100%;
+height:40%;
+background-size:cover
+}
 h1 {
-     color: black; text-align:center;
+     color: ghostwhite; text-align:center;
 }
 /* 杰克斑马 hover overlay*/
 .container {
