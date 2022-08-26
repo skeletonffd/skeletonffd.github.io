@@ -1,0 +1,38 @@
+
+marquee {
+    color: black;
+}
+p1 {
+    font-family: "Helvetica", Times, sans-serif;
+}
+p1 {
+    text-align: center;
+}
+body {background-image:url('微信图片_20220827034014.jpg');
+    background-size: 500px;
+}
+h1 {
+    color: black;
+    text-align: center;
+}
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+
+#all{
+    width:100%;
+    float:left;
+    text-align:center;
+}
+
+
