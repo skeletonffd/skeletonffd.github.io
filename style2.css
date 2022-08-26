@@ -34,5 +34,7 @@ body {
     float:left;
     text-align:center;
 }
-
+iframe {
+    max-width:100%;
+}
 
