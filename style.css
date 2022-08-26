@@ -12,6 +12,7 @@ p1 {
     text-align: center;
 }
 body {background-image:url('微信图片_20220827034014.jpg');
+    background-size: 500px;
 }
 h1 {
      color: black; text-align:center;
