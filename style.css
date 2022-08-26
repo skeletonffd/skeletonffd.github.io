@@ -3,7 +3,7 @@ p1 {
 
 }
 marquee {
-    color: white;
+    color: black;
 }
 p1 {
     font-family: "Times New Roman", Times, serif;
@@ -11,9 +11,9 @@ p1 {
 p1 {
     text-align: center;
 }
-body {background-image:url('https://mblogthumb-phinf.pstatic.net/20150911_199/ggariana_1441972118418p5Rzs_JPEG/zyzz-workout.jpg?type=w2');}
+body {background-image:url('微信图片_20220827034014.jpg');}
 h1 {
-     color: white; text-align:center;
+     color: black; text-align:center;
 }
 /* 杰克斑马 hover overlay*/
 .container {
@@ -51,7 +51,7 @@ h1 {
 body {
     margin: 0;
     padding: 0;
-    color: white;
+    color: black;
     font-size: 40px;
     font-weight: bold;
 }
