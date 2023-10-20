@@ -13,5 +13,7 @@
     <orderEntry type="library" name="@types/bounce.js" level="application" />
     <orderEntry type="library" name="animate.css" level="application" />
     <orderEntry type="library" name="jquery-3.6.0" level="application" />
+    <orderEntry type="library" name="font-awesome" level="application" />
+    <orderEntry type="library" name="normalize" level="application" />
   </component>
 </module>
