@@ -11,7 +11,8 @@ p1 {
 p1 {
     text-align: center;
 }
-body {background-image:url('pics/626Background.jpg');
+body {
+    background-image:url('pics/微信图片_20240914033032.jpg');
     background-size: 500px;
 }
 h1 {
@@ -56,6 +57,7 @@ body {
     color: black;
     font-size: 40px;
     font-weight: bold;
+
 }
 
 .marquee {
