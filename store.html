@@ -48,7 +48,31 @@
       .sidenav a {font-size: 18px;}
     }
   </style>
-</head>
+  <style>
+    /* 定义本地字体 */
+    @font-face {
+      font-family: 'MyCustomFont';  /* 自定义字体名称 */
+      src: url('font/小可爱.ttf') format('truetype'); /* 字体文件路径 */
+      /* 支持多格式可添加其他格式 */
+      /* src: url('fonts/YourFontFile.woff') format('woff'),
+               url('fonts/YourFontFile.otf') format('opentype'); */
+    }
+
+    /* 创建居中容器 */
+    .centered-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 20vh; /* 全屏高度 */
+      text-align: center;
+    }
+
+    /* 应用自定义字体 */
+    .custom-font {
+      font-family: 'MyCustomFont', sans-serif; /* 备用字体 */
+      font-size: 2em;
+    }
+  </style>
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -75,6 +99,101 @@
 
 <body>
 <link rel="stylesheet" href="css/style3.css">
+<style>
+  .container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 20px 0;
+    background: #ffffff;
+  }
 
+  .slider-track {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll 50s linear infinite;
+  }
+
+  .slider-track:hover {
+    animation-play-state: paused;
+  }
+
+  .slide {
+    display: inline-block;
+    width: 400px;
+    height: 500px;
+    margin: 0;
+    transition: transform 0.3s ease;
+    position: relative;
+  }
+
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .slide:hover {
+    transform: scale(1.2);
+    z-index: 1;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+</style>
+</head>
+<div class="container">
+  <div class="slider-track">
+    <!-- 复制一组图片实现无缝滚动 -->
+    <div class="slide"> <img src="pics/626%20HAT/bloody.jpg" alt=""></div>
+    <div class="slide"> <img src="pics/626%20HAT/cute%20guy.png" alt=""></div>
+    <div class="slide"> <img src="pics/626%20HAT/dudes.jpg" alt=""></div>
+    <div class="slide"> <img src="pics/626%20HAT/hat%20detail.jpg" alt=""></div>
+    <div class="slide"> <img src="pics/626%20HAT/jackie%20with%20626%20hat.jpg" alt=""></div>
+    <div class="slide"> <img src="pics/626%20HAT/laker.jpg" alt=""></div>
+    <div class="slide"> <img src="pics/626%20HAT/laoren.jpg" alt=""></div>
+    <div class="slide"> <img src="pics/626%20HAT/roz.jpg" alt=""></div>
+    <div class="slide"> <img src="pics/626%20HAT/who%20is%20this.jpg" alt=""></div>
+    <div class="slide"> <img src="pics/626%20HAT/xav.jpg" alt=""></div>
+    <div class="slide"> <img src="pics/626%20HAT/bloody.jpg" alt=""></div>
+    <div class="slide"> <img src="pics/626%20HAT/cute%20guy.png" alt=""></div>
+    <div class="slide"> <img src="pics/626%20HAT/dudes.jpg" alt=""></div>
+    <div class="slide"> <img src="pics/626%20HAT/hat%20detail.jpg" alt=""></div>
+    <div class="slide"> <img src="pics/626%20HAT/jackie%20with%20626%20hat.jpg" alt=""></div>
+    <div class="slide"> <img src="pics/626%20HAT/laker.jpg" alt=""></div>
+    <div class="slide"> <img src="pics/626%20HAT/laoren.jpg" alt=""></div>
+    <div class="slide"> <img src="pics/626%20HAT/roz.jpg" alt=""></div>
+    <div class="slide"> <img src="pics/626%20HAT/who%20is%20this.jpg" alt=""></div>
+    <div class="slide"> <img src="pics/626%20HAT/xav.jpg" alt=""></div>
+  </div>
+</div>
+<div class="centered-container">
+  <p class="custom-font">Contact email 626company626company626company@gmail.com</p>
+
+</div>
+<div class="centered-container">
+  <p class="custom-font">$66 + Shipping $20</p>
+</div>
+<script>
+  // JavaScript 控制悬停时暂停动画
+  const track = document.querySelector('.slider-track');
+  const slides = document.querySelectorAll('.slide');
+
+  slides.forEach(slide => {
+    slide.addEventListener('mouseover', () => {
+      track.style.animationPlayState = 'paused';
+    });
+
+    slide.addEventListener('mouseout', () => {
+      track.style.animationPlayState = 'running';
+    });
+  });
+</script>
 </body>
-<body>
+```
