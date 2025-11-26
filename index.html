@@ -1,67 +1,23 @@
 <!DOCTYPE html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>626 company</title>
-    <link rel="shortcut icon" href="pics/微信图片_20220827034014.ico">
-    <style>
-        body {
-            font-family: "Lato", sans-serif;
-        }
-
-        .sidenav {
-            height: 100%;
-            width: 0;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            background-color: #111;
-            overflow-x: hidden;
-            transition: 0.5s;
-            padding-top: 60px;
-        }
-
-        .sidenav a {
-            padding: 8px 8px 8px 32px;
-            text-decoration: none;
-            font-size: 25px;
-            color: #818181;
-            display: block;
-            transition: 0.3s;
-        }
-
-        .sidenav a:hover {
-            color: #f1f1f1;
-        }
-
-        .sidenav .closebtn {
-            position: absolute;
-            top: 0;
-            right: 25px;
-            font-size: 36px;
-            margin-left: 50px;
-        }
-
-        @media screen and (max-height: 450px) {
-            .sidenav {padding-top: 15px;}
-            .sidenav a {font-size: 18px;}
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>626 company</title>
+  <link rel="shortcut icon" href="pics/微信图片_20220827034014.ico">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-<link rel="stylesheet" href="css/style.css">
 
 <div id="mySidenav" class="sidenav">  <!--  左侧菜单 -->
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="javascript:void(0)" class="closebtn">&times;</a>
     <a href="videospage.html">videos</a>
     <a href="release.html">release</a>
     <a href="store.html">Store</a>
     <a href="中文.html">en/中</a>
 </div>
 
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;Menu </span>
+<span id="menuToggle" style="font-size:30px;cursor:pointer">&#9776;Menu </span>
 
 <div id="popup" class="popup">
     <div class="popup-image">
@@ -73,152 +29,77 @@
       <a href="#" class="popup-close-btn">x</a>
     </div>
   </div>
-  
- <style> 
- .popup {
-    max-width: 80%;
-  max-height: 80%;
-position: fixed;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-width: 300px;
-height: 300px;
-background-color: rgb(0, 0, 0);
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-z-index: 9999;
-padding: 20px;
-text-align: center;
-}
 
-.popup-content {
-margin-bottom: 40px;
-}
-
-.popup-close {
-position: absolute;
-top: 0;
-right: 0;
-width: 40px;
-height: 40px;
-text-align: center;
-line-height: 40px;
-}
-
-.popup-close-btn {
-display: block;
-font-size: 24px;
-color: rgb(255, 255, 255);
-text-decoration: none;
-}
-.popup-image img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-  /* 其他图片样式 */
-}
-
-  </style>
-
-  <script>
-var closeBtn = document.querySelector('.popup-close-btn');
-var popup = document.querySelector('.popup');
-
-closeBtn.addEventListener('click', function(e) {
-e.preventDefault();
-popup.style.display = 'none';
-});
-
-
-
-  </script>
-
-<script>
-    function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-    }
-
-    function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-    }
-</script>
-<head>
 <div class="marquee">
-    <div class="track">
-        <div class="content">&nbsp;626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY</div>
-    </div>
+  <div class="track">
+    <div class="content">&nbsp;626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY</div>
+    <div class="content">&nbsp;626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY</div>
+  </div>
 </div>
 <div class="marquee">
-    <div class="track">
-        <div class="content">&nbsp;626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY</div>
-    </div>
-</div>
-
-<div class="marquee">
-    <div class="track">
-        <div class="content">&nbsp;626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY</div>
-    </div>
+  <div class="track">
+    <div class="content">&nbsp;626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY</div>
+    <div class="content">&nbsp;626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY</div>
+  </div>
 </div>
 <div class="marquee">
-    <div class="track">
-        <div class="content">&nbsp;626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY</div>
-    </div>
+  <div class="track">
+    <div class="content">&nbsp;626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY</div>
+    <div class="content">&nbsp;626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY</div>
+  </div>
+</div>
+<div class="marquee">
+  <div class="track">
+    <div class="content">&nbsp;626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY</div>
+    <div class="content">&nbsp;626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY 626 COMPANY</div>
+  </div>
 </div>
 
 
 <h1>MEMBERS</h1>
 <a href="https://soundcloud.com/jack-zebra">
-<marquee   behavior="scroll" onmouseover="stop()" onmouseout="start()">
     <div class="container">
-        <img src="pics/jackzebra.jpg" alt="Avatar" width="128" height="130">
+        <img src="pics/jackzebra.jpg" alt="Avatar" width="128" height="130" loading="lazy">
         <div class="overlay">
             <div class="text">jack zebra</div>
         </div>
     </div>
-    </marquee>
 </a>
 <a href="https://www.instagram.com/malaad._/">
-    <marquee   behavior="scroll"  onmouseover="stop()" onmouseout="start()">
         <div class="container">
-            <img src="pics/微信图片_20220826013905.jpg" alt="Avatar" width="128" height="130">
+            <img src="pics/微信图片_20220826013905.jpg" alt="Avatar" width="128" height="130" loading="lazy">
             <div class="overlay">
                 <div class="text">malayika</div>
             </div>
         </div>
-    </marquee>
 </a>
 <a href="https://soundcloud.com/1kbps1kbps">
-    <marquee   behavior="scroll"  onmouseover="stop()" onmouseout="start()">
         <div class="container">
-            <img src="pics/1kbps.jpg" alt="Avatar" width="128" height="130">
+            <img src="pics/1kbps.jpg" alt="Avatar" width="128" height="130" loading="lazy">
             <div class="overlay">
                 <div class="text">1kbps</div>
             </div>
         </div>
-    </marquee>
 </a>
 <a href="https://www.instagram.com/djstoleyourbae/">
-    <marquee   behavior="scroll"  onmouseover="stop()" onmouseout="start()">
         <div class="container">
-            <img src="pics/2be25e4b273cd4b876048429af81b7e.jpg" alt="Avatar" width="128" height="130">
+            <img src="pics/2be25e4b273cd4b876048429af81b7e.jpg" alt="Avatar" width="128" height="130" loading="lazy">
             <div class="overlay">
                 <div class="text">skeleton</div>
             </div>
         </div>
-    </marquee>
 </a>
 <a href="https://www.instagram.com/626_ricky_118/">
-    <marquee   behavior="scroll"  onmouseover="stop()" onmouseout="start()">
         <div class="container">
-            <img src="pics/22e81976834500e224c6b4131a358e0.png" alt="Avatar" width="128" height="130">
+            <img src="pics/22e81976834500e224c6b4131a358e0.png" alt="Avatar" width="128" height="130" loading="lazy">
             <div class="overlay">
                 <div class="text">ricky</div>
             </div>
         </div>
-    </marquee>
 </a>
 
-</head>
 </body>
+<script src="js/app.js"></script>
+</html>
 
 

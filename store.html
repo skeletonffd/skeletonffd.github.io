@@ -1,53 +1,12 @@
 <!DOCTYPE html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>626 company</title>
   <link rel="shortcut icon" href="pics/微信图片_20220827034014.ico">
-  <style>
-    body {
-      font-family: "Lato", sans-serif;
-    }
-
-    .sidenav {
-      height: 100%;
-      width: 0;
-      position: fixed;
-      z-index: 1;
-      top: 0;
-      left: 0;
-      background-color: #111;
-      overflow-x: hidden;
-      transition: 0.5s;
-      padding-top: 60px;
-    }
-
-    .sidenav a {
-      padding: 8px 8px 8px 32px;
-      text-decoration: none;
-      font-size: 25px;
-      color: #818181;
-      display: block;
-      transition: 0.3s;
-    }
-
-    .sidenav a:hover {
-      color: #f1f1f1;
-    }
-
-    .sidenav .closebtn {
-      position: absolute;
-      top: 0;
-      right: 25px;
-      font-size: 36px;
-      margin-left: 50px;
-    }
-
-    @media screen and (max-height: 450px) {
-      .sidenav {padding-top: 15px;}
-      .sidenav a {font-size: 18px;}
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style3.css">
   <style>
     /* 定义本地字体 */
     @font-face {
@@ -80,104 +39,41 @@
       font-size: 2em;
     }
   </style>
-
+</head>
+<body>
 <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
+  <a href="javascript:void(0)" class="closebtn">&times;</a>
   <a href="videospage.html">videos</a>
   <a href="release.html">release</a>
   <a href="store.html">Store</a>
   <a href="contact.html">Contact</a>
   <a href="中文.html">en/中文</a>
-
 </div>
 
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;Menu </span>
-
-<script>
-  function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-  }
-
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-  }
-</script>
-
-<body>
-<link rel="stylesheet" href="css/style3.css">
-<style>
-  .container {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    padding: 20px 0;
-    background: #ffffff;
-  }
-
-  .slider-track {
-    display: inline-block;
-    white-space: nowrap;
-    animation: scroll 50s linear infinite;
-  }
-
-  .slider-track:hover {
-    animation-play-state: paused;
-  }
-
-  .slide {
-    display: inline-block;
-    width: 400px;
-    height: 500px;
-    margin: 0;
-    transition: transform 0.3s ease;
-    position: relative;
-  }
-
-  .slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .slide:hover {
-    transform: scale(1.2);
-    z-index: 1;
-  }
-
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
-  }
-</style>
-</head>
+<span id="menuToggle" style="font-size:30px;cursor:pointer">&#9776;Menu </span>
 <div class="container">
   <div class="slider-track">
     <!-- 复制一组图片实现无缝滚动 -->
-    <div class="slide"> <img src="pics/626%20HAT/bloody.jpg" alt=""></div>
-    <div class="slide"> <img src="pics/626%20HAT/cute%20guy.png" alt=""></div>
-    <div class="slide"> <img src="pics/626%20HAT/dudes.jpg" alt=""></div>
-    <div class="slide"> <img src="pics/626%20HAT/hat%20detail.jpg" alt=""></div>
-    <div class="slide"> <img src="pics/626%20HAT/jackie%20with%20626%20hat.jpg" alt=""></div>
-    <div class="slide"> <img src="pics/626%20HAT/laker.jpg" alt=""></div>
-    <div class="slide"> <img src="pics/626%20HAT/laoren.jpg" alt=""></div>
-    <div class="slide"> <img src="pics/626%20HAT/roz.jpg" alt=""></div>
-    <div class="slide"> <img src="pics/626%20HAT/who%20is%20this.jpg" alt=""></div>
-    <div class="slide"> <img src="pics/626%20HAT/xav.jpg" alt=""></div>
-    <div class="slide"> <img src="pics/626%20HAT/bloody.jpg" alt=""></div>
-    <div class="slide"> <img src="pics/626%20HAT/cute%20guy.png" alt=""></div>
-    <div class="slide"> <img src="pics/626%20HAT/dudes.jpg" alt=""></div>
-    <div class="slide"> <img src="pics/626%20HAT/hat%20detail.jpg" alt=""></div>
-    <div class="slide"> <img src="pics/626%20HAT/jackie%20with%20626%20hat.jpg" alt=""></div>
-    <div class="slide"> <img src="pics/626%20HAT/laker.jpg" alt=""></div>
-    <div class="slide"> <img src="pics/626%20HAT/laoren.jpg" alt=""></div>
-    <div class="slide"> <img src="pics/626%20HAT/roz.jpg" alt=""></div>
-    <div class="slide"> <img src="pics/626%20HAT/who%20is%20this.jpg" alt=""></div>
-    <div class="slide"> <img src="pics/626%20HAT/xav.jpg" alt=""></div>
+    <div class="slide"> <img src="pics/626%20HAT/bloody.jpg" alt="" loading="lazy"></div>
+    <div class="slide"> <img src="pics/626%20HAT/cute%20guy.png" alt="" loading="lazy"></div>
+    <div class="slide"> <img src="pics/626%20HAT/dudes.jpg" alt="" loading="lazy"></div>
+    <div class="slide"> <img src="pics/626%20HAT/hat%20detail.jpg" alt="" loading="lazy"></div>
+    <div class="slide"> <img src="pics/626%20HAT/jackie%20with%20626%20hat.jpg" alt="" loading="lazy"></div>
+    <div class="slide"> <img src="pics/626%20HAT/laker.jpg" alt="" loading="lazy"></div>
+    <div class="slide"> <img src="pics/626%20HAT/laoren.jpg" alt="" loading="lazy"></div>
+    <div class="slide"> <img src="pics/626%20HAT/roz.jpg" alt="" loading="lazy"></div>
+    <div class="slide"> <img src="pics/626%20HAT/who%20is%20this.jpg" alt="" loading="lazy"></div>
+    <div class="slide"> <img src="pics/626%20HAT/xav.jpg" alt="" loading="lazy"></div>
+    <div class="slide"> <img src="pics/626%20HAT/bloody.jpg" alt="" loading="lazy"></div>
+    <div class="slide"> <img src="pics/626%20HAT/cute%20guy.png" alt="" loading="lazy"></div>
+    <div class="slide"> <img src="pics/626%20HAT/dudes.jpg" alt="" loading="lazy"></div>
+    <div class="slide"> <img src="pics/626%20HAT/hat%20detail.jpg" alt="" loading="lazy"></div>
+    <div class="slide"> <img src="pics/626%20HAT/jackie%20with%20626%20hat.jpg" alt="" loading="lazy"></div>
+    <div class="slide"> <img src="pics/626%20HAT/laker.jpg" alt="" loading="lazy"></div>
+    <div class="slide"> <img src="pics/626%20HAT/laoren.jpg" alt="" loading="lazy"></div>
+    <div class="slide"> <img src="pics/626%20HAT/roz.jpg" alt="" loading="lazy"></div>
+    <div class="slide"> <img src="pics/626%20HAT/who%20is%20this.jpg" alt="" loading="lazy"></div>
+    <div class="slide"> <img src="pics/626%20HAT/xav.jpg" alt="" loading="lazy"></div>
   </div>
 </div>
 <div class="centered-container">
@@ -192,22 +88,6 @@
   <p class="custom-font">626company626company626company@gmail.com</p>
 </div>
 
-
-
-
-<script>
-  // JavaScript 控制悬停时暂停动画
-  const track = document.querySelector('.slider-track');
-  const slides = document.querySelectorAll('.slide');
-
-  slides.forEach(slide => {
-    slide.addEventListener('mouseover', () => {
-      track.style.animationPlayState = 'paused';
-    });
-
-    slide.addEventListener('mouseout', () => {
-      track.style.animationPlayState = 'running';
-    });
-  });
-</script>
+<script src="js/app.js"></script>
 </body>
+</html>

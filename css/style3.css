@@ -1,1 +1,47 @@
 body {background-image:url('pics/626Background.jpg')}
+.container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 20px 0;
+  background: #ffffff;
+}
+
+.slider-track {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll 50s linear infinite;
+}
+
+.slider-track:hover {
+  animation-play-state: paused;
+}
+
+.slide {
+  display: inline-block;
+  width: 400px;
+  height: 500px;
+  margin: 0;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .slider-track { animation: none; }
+}
